@@ -10,7 +10,7 @@ import {
 	// GetStarted,
 	Hero,
 	Navbar,
-	// Stats,
+	Stats,
 	// Testimonials,
 } from './components'
 import styles from './style'
@@ -32,7 +32,8 @@ const App = () => {
 
 			<div className={`${styles.paddingX} ${styles.flexStart}`}>
 				<div className={`${styles.boxWidth}`}>
-					{/* <Stats />
+					<Stats />
+					{/* 
 					<Business />
 					<Billing />
 					<CardDeal />

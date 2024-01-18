@@ -8,16 +8,18 @@ const Hero: React.FC = () => {
 			<div
 				className={`flex-1 ${styles.flexStart} flex-col px-6 sm:px-16 xl:px-0`}
 			>
-				<div className="bg-discount-gradient bg-2 mb-2 flex flex-row items-center rounded-[10px] px-4 py-[6px]">
+				<div className="bg-discount-gradient bg-2 mb-2 flex flex-row items-center rounded-[10px] py-[6px] pl-4 pr-6">
 					<img
 						src={discount}
 						alt="discount"
 						className="h-[32px] w-[32px]"
 					/>
-					<p className={`${styles.paragraph} ml-2 uppercase`}>
-						<span className="mr-2 text-white">20%</span>
+					<p
+						className={`${styles.paragraph} ml-2 select-none uppercase`}
+					>
+						<span className=" text-white">20% </span>
 						Discount For
-						<span className="mx-2 text-white">1 Month</span>
+						<span className=" text-white"> 1 Month </span>
 						Account
 					</p>
 				</div>
@@ -44,7 +46,14 @@ const Hero: React.FC = () => {
 			<div
 				className={`relative my-10 flex flex-1 md:my-0 ${styles.flexCenter}`}
 			>
-				<img src={robot} alt="robot" className="z-[5] h-full w-full " />
+				<img
+					src={robot}
+					alt="robot"
+					className="pointer-events-none z-[5] h-full w-full select-none"
+					onDragStart={() => {
+						return false
+					}}
+				/>
 				<div className="pink__gradient absolute top-0 z-0 h-[35%] w-[40%]"></div>
 				<div className="white__gradient absolute bottom-40 z-[1] h-[80%] w-[80%] rounded-full"></div>
 				<div className="blue__gradient absolute bottom-20 right-20 z-0 h-[50%] w-[50%]"></div>
