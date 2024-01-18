@@ -10,11 +10,11 @@ const Navbar: React.FC<{
 	return (
 		<div className="item-center flex justify-between py-6">
 			<img src={logo} alt="logo" className="h-[32px] w-[124px]" />
-			<ul className="hidden h-full list-none items-center justify-start gap-10 sm:flex ">
+			<ul className="hidden h-[32px] list-none items-center justify-start gap-10 sm:flex ">
 				{navLinks.map((navItem: any) => (
 					<li
 						key={navItem.id}
-						className={`${active == navItem.id ? 'text-white' : 'text-dimWhite'} cursor-pointer font-poppins text-base transition-colors hover:text-white`}
+						className={`${active == navItem.id ? ' text-white' : 'text-dimWhite'} cursor-pointer font-poppins text-base transition-colors hover:text-white`}
 					>
 						<a href={`#${navItem.id}`}>{navItem.title}</a>
 					</li>

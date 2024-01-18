@@ -8,7 +8,7 @@ import {
 	// FeedbackCard,
 	// Footer,
 	// GetStarted,
-	// Hero,
+	Hero,
 	Navbar,
 	// Stats,
 	// Testimonials,
@@ -25,7 +25,9 @@ const App = () => {
 			</div>
 
 			<div className={`${styles.flexStart}`}>
-				<div className={`${styles.boxWidth}`}>{/* <Hero /> */}</div>
+				<div className={`${styles.boxWidth}`}>
+					<Hero />
+				</div>
 			</div>
 
 			<div className={`${styles.paddingX} ${styles.flexStart}`}>
